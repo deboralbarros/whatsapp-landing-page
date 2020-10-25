@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5 url("assets/vector.png") right top no-repeat;
+  background-size: 55vw;
+  overflow-x: hidden;
+}
+
+div#menu {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#menu div {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+  margin-right: 120px;
+}
+
+div#menu div a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+div#menu div a:hover {
+  text-decoration: underline;
+}
+
+div#menu img {
+  width: 5%;
+  margin-left: 150px;
+}
+
+section#header div#content {
+  position: relative;
+  transform: translate(10%, 30%);
+}
+
+section#header div#content h1 {
+  margin-bottom: 30px;
+  color: #333333;
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+section#header div#content h2 {
+  color: #909090;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+section#header div#content div#buttons {
+  width: 30%;
+  height: 10vh;
+  margin-top: 20px;
+}
+
+section#header div#content div#buttons button {
+  width: 40%;
+  padding: 15px;
+  border-radius: 91px;
+  font-size: 1rem;
+  font-family: "Ubutton", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+section#header div#content div#buttons button#download {
+  border: none;
+  background: #25d366;
+  color: #fff;
+}
+
+section#header div#content div#buttons button#download:hover {
+  background: rgba(37, 211, 102, 0.79);
+}
+
+section#header div#content div#buttons button#learn-more {
+  border: 2px solid #25d366;
+  color: #25d366;
+  background: #e5e5e5;
+  margin-left: 30px;
+}
+
+section#header img[alt="Chat"] {
+  float: right;
+  transform: translate(-10%, -60%);
+}
+
+section#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-10%);
+}
+
+section#about div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+section#about div.about-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #909090;
+}
+
+section#about div.about-text h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+section#about div.about-text h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #333333;
+  font-size: 2rem;
+}
+
+section#about div.about-text p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0 20px;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid #cccccc;
+  margin: 0 auto;
+}
+
+section#download h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 40px;
+}
+
+section#download > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+section#download > div h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+section#download > div > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#download > div div.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#download > div div.images img {
+  margin: 10px 0;
+}
+
+section#download div p {
+  font-size: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+  width: 60%;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+section#download div p:not(:first-child) {
+  margin-bottom: 50px;
+}
+
+section#download div p a {
+  color: #34b7f1;
+  cursor: pointer;
+}
+
+section#download div h3 {
+  margin: 10px 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #909090;
+  font-weight: 400;
+}
+
+section#download div h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+section#download div a {
+  font-size: 1.3rem;
+  margin: 3px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  color: #34b7f1;
+  cursor: pointer;
+}
+
+section#security h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 40px;
+}
+
+div.cards-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+div.cards-container div.card {
+  width: 25%;
+  height: 45vh;
+  padding: 30px;
+  background: #fff;
+  margin: 0 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section#security div.cards-container div.card .circle {
+  width: 40%;
+  height: 16vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+section#security div.cards-container div.card .circle.green {
+  background: rgba(142, 237, 149, 0.3);
+}
+
+section#security div.cards-container div.card .circle.yellow {
+  background: rgba(252, 224, 111, 0.4);
+}
+
+section#security div.cards-container div.card .circle.blue {
+  background: rgba(140, 221, 255, 0.4);
+}
+
+section#security div.cards-container div.card h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+div.cards-container div.card p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #909090;
+  text-align: center;
+}
+
+section#common-questions h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333333;
+  text-align: center;
+  margin-top: 40px;
+}
+
+section#common-questions div.cards-container div.card {
+  display: block;
+}
+
+section#common-questions div.cards-container div.card h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #25d366;
+  font-size: 2rem;
+  text-align: center;
+}
+
+section#common-questions div.cards-container div.card ul {
+  list-style: none;
+  margin: 50px 0 10px;
+}
+
+section#common-questions div.cards-container div.card ul li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+section#common-questions div.cards-container div.card ul li::before {
+  content: "-";
+  margin: 0 5px;
+}
+
+section#common-questions div.cards-container div.card a {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+section#common-questions div.cards-container div.card a i {
+  margin: 0 10px;
+  font-size: 0.6rem;
+}
+
+div#footer {
+  height: 60vh;
+  background: #25d366;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div#footer div.content {
+  height: 100%;
+  width: 20%;
+  padding: 70px;
+}
+
+div#footer div.content h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+div#footer div.content ul {
+  list-style: none;
+}
+
+div#footer div.content ul li {
+  font-size: 1.1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+div#footer div.content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div#copyright {
+  width: 100%;
+  background: #23b75a;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#copyright p {
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
